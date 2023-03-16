@@ -1,4 +1,5 @@
 function solution(nums) {
-     let set = new Set(nums);
-    return set.size > nums.length / 2 ? Math.floor(nums.length / 2) : set.size
+    let limitPockets = nums.length / 2;
+    let setPockets = new Set(nums);
+    return setPockets.size < limitPockets ? setPockets.size : limitPockets;
 }
