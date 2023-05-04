@@ -4,4 +4,4 @@ input.shift();
 
 input.sort((a, b) => parseInt(a) - parseInt(b));
 
-input.map(x => console.log(`${x}`));
+console.log(input.join('\n'));
